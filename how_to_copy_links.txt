@@ -1,0 +1,11 @@
+go on page where playlist and open inspect go on console:
+
+var scroll = setInterval(function(){ window.scrollBy(0, 1000)}, 1000); 
+
+
+window.clearInterval(scroll); console.clear(); urls = $$('a'); urls.forEach(function(v,i,a){if (v.id=="video-title"){console.log(v.href)}});
+
+
+copy past the output in sublime text and use regex to filter out links and save to txt file: 
+
+https://www.youtube.com/watch\?v=.+
